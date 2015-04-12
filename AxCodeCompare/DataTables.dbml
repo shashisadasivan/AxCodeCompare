@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AX_2012_model" Class="DataTablesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sds-sql2012;Initial Catalog=TFS_TEST1_2012_R2_GSE_DEP_model;Integrated Security=True" SettingsObjectName="AxCodeCompare.Properties.Settings" SettingsPropertyName="AX_2012_modelConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ElementTypes" Member="ElementTypes">
+    <Type Name="ElementType">
+      <Column Name="ElementType" Member="ElementType1" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ElementTypeName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="TreeNodeName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelElement" Member="ModelElements">
+    <Type Name="ModelElement">
+      <Column Name="ElementType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RootHandle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParentHandle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ElementHandle" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AxId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelElementData" Member="ModelElementDatas">
+    <Type Name="ModelElementData">
+      <Column Name="LayerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentHandle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ElementHandle" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ModelId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
