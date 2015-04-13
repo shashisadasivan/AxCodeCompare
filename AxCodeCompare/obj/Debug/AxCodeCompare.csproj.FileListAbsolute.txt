@@ -3,3 +3,4 @@ C:\GitHub\AxCodeCompare\AxCodeCompare\bin\Debug\AxCodeCompare.exe
 C:\GitHub\AxCodeCompare\AxCodeCompare\bin\Debug\AxCodeCompare.pdb
 C:\GitHub\AxCodeCompare\AxCodeCompare\obj\Debug\AxCodeCompare.exe
 C:\GitHub\AxCodeCompare\AxCodeCompare\obj\Debug\AxCodeCompare.pdb
+C:\GitHub\AxCodeCompare\AxCodeCompare\obj\Debug\AxCodeCompare.csprojResolveAssemblyReference.cache
